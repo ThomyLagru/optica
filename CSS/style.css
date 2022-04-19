@@ -1,0 +1,355 @@
+* {
+  margin: 1;
+  padding: 1;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  background-color: rgba(128, 128, 128, 0.349)
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: inline;
+  padding: 10px;
+}
+
+ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+nav > ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.568);
+  padding: 3.2%;
+}
+
+p {
+  color: rgb(12, 177, 177);
+}
+
+a{
+  text-decoration: none;
+}
+
+/* comienzo header */
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; 
+  grid-area: header;
+}
+
+.nav__col {
+  background-color: rgb(86, 11, 173);
+  width: 500px;
+  border-style: groove;
+}
+
+.nav__col--P {
+  background-color: rgb(86, 11, 173);
+  width: 600px;
+  border-style: groove;
+}
+
+/* configuracion basica (todas las pags) */
+
+.mnconf {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.mnconf__R {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+}
+
+.margen {
+  margin: 20px;
+}
+
+.pie {
+ border-style: groove;
+}
+
+.pieconf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* comienzo imagen */
+.imcent {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  justify-content: space-between;
+  grid-gap: 5px;
+}
+
+.imagen{
+  width: 400px;
+  height: 400px;
+}
+
+.imagen__P {
+  width: 80px;
+  height: 70px;
+}
+
+.imagen__G {
+  width: 230px;
+  height: 220px;
+}
+
+.im__R {
+  border-radius: 10px;
+}
+
+.imAs {
+  border-radius: 15px;
+  border: solid 1px black;
+}
+
+
+/* comienzo texto */
+.txti {
+  text-align: left;
+}
+
+.txtd {
+  text-align: right;
+}
+
+.txtcen {
+  text-align: center;
+}
+
+.txtAb {
+  margin-right: 700px;
+  position: relative;
+}
+
+.txtAb__A {
+  margin-top: 5%;
+}
+
+.txtAb__B {
+  margin-top: 10%;
+}
+
+.titcolor {
+  color: rgb(255, 0, 0)
+}
+
+/* otros */
+#formulario {
+  border-style: ridge;
+  color: indigo;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: right;
+  justify-content: space-between;
+}
+
+.form {
+  width: 300px;
+}
+
+/* clases para @mobile en tablet */
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.aside{
+  grid-area: aside;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.fotos {
+  grid-area: fotos;
+}
+
+.sucur {
+  grid-area: sucur;
+}
+
+.info{
+  grid-area: info;
+}
+
+/* 768px y 360px @mobile */
+
+@media (max-width:360px) {
+  body {
+    font-size: 18px;
+  }
+  
+  * {
+    margin: 0;
+  }
+
+  footer a {
+    font-size: 20px;
+  }
+
+  .home {
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "nav"
+      "main "
+      "aside "
+      "footer ";
+  }
+
+  .header {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 70vh;
+  
+  }
+
+  .nav__col {
+    width: 70vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: left;
+    
+  }
+
+  .mnconf {
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vh;
+  }
+  
+  .pieconf {
+    flex-flow: column wrap;
+    width: 360px;
+  }
+
+  .im__R {
+    margin-left: 3%;
+    width: 300px;
+  }
+}
+
+@media (max-width:360px){
+  .galtab{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "fotos"
+    "footer "  ;
+  }
+
+  .nav__col--P ul {
+    padding: 0;
+    width: 300px;
+  }
+  
+  .fotbl{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .nav__col--P {
+    width: 55vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: left;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width:360px){
+  .sucursales {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "sucur"
+    "footer";
+  }
+
+  .imcent{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width:360px){
+  .qsomos {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "info"
+    "footer";
+  }
+
+  .margen {
+    margin: 10px;
+  }
+
+  .txtAb__B {
+    margin-top: 0%;
+  }
+
+  .mnconf {
+    flex-flow: column nowrap;
+    width: 360px;
+  }
+  
+  .mnconf__R {
+    flex-flow: column nowrap;
+    width: 360px;
+  }
+  
+  .contacto {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 360px;
+  }
+}
+
+@media (max-width:360px){
+  .formu{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "completar"
+    "footer";
+  }
+
+  .margen{
+    margin-left: 10px;
+  }
+
+}
