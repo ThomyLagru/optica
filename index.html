@@ -7,35 +7,40 @@
   <title>Optica Vedere</title>
   <link rel="shortcut icon" href="Images/optica logo.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="CSS/style.css"> 
 </head>
 <body>
-  <div class="home">
-    <section>
-      <header class="header">
+  <div class="home container-fluid">
+    <section class="row">
+      <header class="header col-lg-7">
         <img src="Images/optica logo1.png" class="im__R">
-        <nav class="nav nav__col">
-          <ul>
-            <li><a href="Pages/galeria.html">Galeria</a></li>
-            <li><a href="Pages/tiendas.html">Tiendas</a></li>
-            <li><a href="Pages/somos.html">Quienes somos</a></li>
-            <li><a href="Pages/contacto.html"> Contacto</a></li>
-         </ul>
-        </nav>
+        <section class="nav col-lg-5 offset-lg-9 nav__col--P">
+          <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link"href="Pages/galeria.html">Galeria</a>
+                <a class="nav-link" href="Pages/tiendas.html">Tiendas</a>
+                <a class="nav-link" href="Pages/somos.html"> Quienes Somos</a>
+                <a class="nav-link" href="Pages/contacto.html"> Contacto</a>
+              </div>
+            </div>
+          </nav>
+        </section>
       </header>
     </section>  
     <section>
-      <main class="mnconf txtAb__A main">
-        <article class="margen">
+      <main class="mnconf txtAb__A main row">
+        <article class="col-lg-9">
           <h2 class="titcolor">Que vendemos</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aspernatur exercitationem mollitia tempore libero praesentium quis maxime dolorem minus, perferendis ad suscipit quidem, est pariatur modi aut ab magni? Laborum veritatis minus animi saepe iste fugit error dignissimos, iure doloremque repellendus! Expedita dolorum id repudiandae natus molestias odit iure voluptate! Animi at totam nemo! Accusantium ipsum at expedita ex, voluptas omnis deleniti ut similique optio exercitationem vel numquam odit! Distinctio ipsa adipisci, iste suscipit, eveniet architecto vero veniam quidem odio beatae debitis aspernatur dolorum quasi error. Aspernatur voluptatum accusamus fugiat saepe, in, nemo, consequuntur ipsa sed et eius dolorum temporibus!.</p>
         </article>
-        <aside class="aside">
+        <aside class="aside col-lg-3">
           <img class="imAs" src="Images/Local moreno.jpg" alt="Local Moreno">
         </aside>
       </main>
     </section>
-    <section class="footer">
+    <section class="footer row">
       <footer class="pie pieconf txtAb__A">
         <div>
           <img src="Images/optica logo1.png" alt="">
@@ -44,13 +49,14 @@
         <a href="https://www.google.com.ar/maps/search/optica+vedere/@-34.5710593,-58.5689988,12z/data=!3m1!4b1">Mapa</a>
         <a href="Pages/somos.html#contactanos">Contactanos</a>
         <div>
-          <a href="http://twitter.com"><img class="imagen__P" src="images/wpp logo.png" alt=""></a>
-          <a href="https://www.instagram.com/optica_vedere/"><img class="imagen__P" src="images/instagram logo.jpg" alt=""></a>
-          <a href="https://www.facebook.com/profile.php?id=100011316731733"><img class="imagen__P" src="images/facebook logo.png" alt=""></a>
+          <a href="http://twitter.com"><img class="imagen__P" src="./Images/wpp logo.png alt=""></a>
+          <a href="https://www.instagram.com/optica_vedere/"><img class="imagen__P" src="./Images/instagram logo.jpg" alt=""></a>
+          <a href="https://www.facebook.com/profile.php?id=100011316731733"><img class="imagen__P" src="./Images/facebook logo.png" alt=""></a>
         </div>
         <!-- <p>Derechos de autor</p> -->
       </footer>
     </section>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
