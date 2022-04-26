@@ -1,33 +1,8 @@
-* {
-  margin: 1;
-  padding: 1;
-}
 
 body {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   background-color: rgba(128, 128, 128, 0.349)
-}
-
-ul {
-  list-style-type: none;
-}
-
-ul li {
-  display: inline;
-  padding: 10px;
-}
-
-ul li a {
-  color: aliceblue;
-  text-decoration: none;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-
-nav > ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.568);
-  padding: 3.2%;
 }
 
 p {
@@ -47,14 +22,14 @@ a{
 }
 
 .nav__col {
-  background-color: rgb(86, 11, 173);
-  width: 500px;
+  background-color: rgba(128, 128, 128, 0.349);
+  width: 490px;
   border-style: groove;
 }
 
 .nav__col--P {
-  background-color: rgb(86, 11, 173);
-  width: 600px;
+  background-color: rgba(128, 128, 128, 0.349);
+  width: 420px;
   border-style: groove;
 }
 
@@ -71,7 +46,7 @@ a{
 }
 
 .margen {
-  margin: 20px;
+  margin: auto;
 }
 
 .pie {
@@ -102,6 +77,8 @@ a{
 .imagen{
   width: 400px;
   height: 400px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .imagen__P {
@@ -110,8 +87,14 @@ a{
 }
 
 .imagen__G {
-  width: 230px;
-  height: 220px;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+}
+
+.imagen__Q {
+  width: 300px;
+  height: 250px;
 }
 
 .im__R {
@@ -205,6 +188,7 @@ a{
 
 .form {
   width: 300px;
+  margin: auto;
 }
 
 /* clases para @mobile en tablet */
@@ -234,6 +218,10 @@ a{
 
 .info{
   grid-area: info;
+}
+
+.slide {
+  grid-area: slide;
 }
 
 /* 768px y 360px @mobile */
