@@ -1,0 +1,25 @@
+{
+  "name": "optica",
+  "version": "1.0.0",
+  "description": "En este proyecto voy a intentar crear una pagina para una óptica.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss SCSS/estilos.scss CSS/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomyLagru/optica.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThomyLagru/optica/issues"
+  },
+  "homepage": "https://github.com/ThomyLagru/optica#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

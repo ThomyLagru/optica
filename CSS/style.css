@@ -5,10 +5,6 @@ body {
   background-color: rgba(128, 128, 128, 0.349)
 }
 
-p {
-  color: rgb(12, 177, 177);
-}
-
 a{
   text-decoration: none;
 }
@@ -106,6 +102,17 @@ a{
   border: solid 1px black;
 }
 
+.imagen__T {
+  width: 600px;
+  height: 600px;
+  margin: auto;
+}
+
+.imagen__I {
+  width: 250px;
+  height: 200px;
+}
+
 /* prueba galeria slide para fotos de modelos */
 .gallery{
   height: 60%;
@@ -174,6 +181,13 @@ a{
 
 .titcolor {
   color: rgb(255, 0, 0)
+}
+
+.InicioCartas {
+display: flex;
+justify-content: space-between;
+width: 250px;
+height: 300px;
 }
 
 /* otros */
