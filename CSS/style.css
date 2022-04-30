@@ -2,7 +2,7 @@
 body {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
-  background-color: rgba(128, 128, 128, 0.349)
+  background-color: rgb(255, 255, 255)
 }
 
 a{
@@ -18,13 +18,13 @@ a{
 }
 
 .nav__col {
-  background-color: rgba(128, 128, 128, 0.349);
+  background-color: rgb(255, 255, 255);
   width: 490px;
   border-style: groove;
 }
 
 .nav__col--P {
-  background-color: rgba(128, 128, 128, 0.349);
+  background-color: rgb(255, 255, 255);
   width: 420px;
   border-style: groove;
 }
@@ -34,11 +34,7 @@ a{
 .mnconf {
   display: flex;
   flex-flow: row nowrap;
-}
-
-.mnconf__R {
-  display: flex;
-  flex-flow: row-reverse nowrap;
+  justify-content: space-between;
 }
 
 .margen {
@@ -109,7 +105,7 @@ a{
 }
 
 .imagen__I {
-  width: 250px;
+  width: 249px;
   height: 200px;
 }
 
@@ -180,14 +176,29 @@ a{
 }
 
 .titcolor {
-  color: rgb(255, 0, 0)
+  color: rgb(129, 135, 220)
 }
 
+.txtcolor {
+  color: rgb(0, 0, 0);
+  width: 1px;
+}
+
+
 .InicioCartas {
-display: flex;
-justify-content: space-between;
 width: 250px;
 height: 300px;
+}
+
+.colorBoton {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin-top: 10%;
+}
+
+.colorBoton__2 {
+  margin-top: 20%;
 }
 
 /* otros */
@@ -205,7 +216,7 @@ height: 300px;
   margin: auto;
 }
 
-/* clases para @mobile en tablet */
+/* clases para @mobile en tablet-mob */
 .main {
   grid-area: main;
 }
@@ -247,10 +258,19 @@ height: 300px;
   
   * {
     margin: 0;
+    padding: 0;
   }
 
   footer a {
-    font-size: 20px;
+    font-size: 27px;
+  }
+
+  footer div img {
+    width: 30px;
+  }
+
+  nav a {
+    font-size: 30px;
   }
 
   .home {
@@ -258,72 +278,96 @@ height: 300px;
     grid-template-areas: 
       "header"
       "nav"
-      "main "
-      "aside "
-      "footer ";
+      "main"
+      "footer";
   }
 
   .header {
   display: flex;
   flex-flow: column nowrap;
-  width: 70vh;
-  
+  width: 10vh;
   }
 
-  .nav__col {
-    width: 70vh;
+  .im__R{
+    width: 90vw;
+    margin: auto;
+  }
+
+  .nav__col--P {
+    width: 90vw;
     display: flex;
     flex-flow: column nowrap;
     align-items: left;
-    
-  }
-
-  .mnconf {
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 60vh;
+    margin: auto;
   }
   
   .pieconf {
     flex-flow: column wrap;
-    width: 360px;
+    width: 100vw;
   }
 
-  .im__R {
-    margin-left: 3%;
-    width: 300px;
+  .InicioCartas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90vw;
   }
+
+  .InicioCartas p {
+    font-size: 30px;
+  }
+
+  .InicioCartas h5 {
+    font-size: 30px;
+  }
+
+  .imagen__I{
+    width: 90vw;
+  }
+
+  .img__Footer {
+    width: 85vw;
+  }
+
+  .txtAb__A--A {
+    margin-top: 50px;
+  }
+
+
 }
 
 @media (max-width:360px){
-  .galtab{
+  .galtab {
     display: grid;
     grid-template-areas: 
     "header"
     "nav"
-    "fotos"
-    "footer "  ;
+    "slide"
+    "footer"  ;
+  }
+  
+  .nav__col {
+    width: 95vw;
+  }
+  
+  .img__Footer--P {
+    width: 85vw;
   }
 
-  .nav__col--P ul {
-    padding: 0;
-    width: 300px;
+  .header__P {
+    width: 90vw;
   }
-  
-  .fotbl{
-    display: flex;
-    flex-wrap: wrap;
-    
+
+  .carousel {
+    width: 97vw;
   }
-  
-  .nav__col--P {
-    width: 55vh;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: left;
-    margin-left: 10px;
+
+  .colorBoton {
+    margin-top: 0%;
+    width: 60px;
+    height: 40px;
   }
+
 }
 
 @media (max-width:360px){
@@ -336,12 +380,14 @@ height: 300px;
     "footer";
   }
 
-  .imcent{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    margin-left: 10px;
+
+  .txtcolor {
+    color: rgb(255, 255, 255);
+    margin-bottom: 80%;
+    margin-left: 80%;
   }
+  
+
 }
 
 @media (max-width:360px){
@@ -354,28 +400,8 @@ height: 300px;
     "footer";
   }
 
-  .margen {
-    margin: 10px;
-  }
-
-  .txtAb__B {
-    margin-top: 0%;
-  }
-
-  .mnconf {
-    flex-flow: column nowrap;
-    width: 360px;
-  }
-  
-  .mnconf__R {
-    flex-flow: column nowrap;
-    width: 360px;
-  }
-  
-  .contacto {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 360px;
+  .somos__F {
+    font-size: 20px;
   }
 }
 
@@ -389,8 +415,8 @@ height: 300px;
     "footer";
   }
 
-  .margen{
-    margin-left: 10px;
+  .form {
+    font-size: 23px;
   }
 
 }
