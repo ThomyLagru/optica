@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
+.pie {
+  border-style: groove;
+}
+.pieconf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; 
+  grid-area: header;
+}
+.nav__col {
+  background-color: $colWht;
+  width: 490px;
+  border-style: groove;
+}
+
+.nav__col--P {
+  background-color: $colWht;
+  width: 420px;
+  border-style: groove;
+}

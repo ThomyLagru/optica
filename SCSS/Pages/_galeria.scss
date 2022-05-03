@@ -1,0 +1,40 @@
+
+.gallery{
+  height: 60%;
+  width: 90%;
+  display: flex;
+  margin: 5% auto 0;
+  box-sizing: border-box;
+}
+
+.image-box{
+  margin: 1%;
+  flex-grow: 0.5;
+  flex-basis: 0;
+  transition: .5s;
+}
+
+.image-box {
+  img{
+    width: 90%;
+    height: 100vh;
+    object-fit: cover;
+    transition: .4s;
+  }
+}
+
+.image-box:hover {
+  flex-basis: 20%;
+}
+
+.activado {
+  flex-basis: 20%;
+}
+
+.gallery:hover .activado{
+  flex-basis: 0;
+}
+
+.image-box:nth-child(1):hover{
+  flex-basis: 20%;
+}

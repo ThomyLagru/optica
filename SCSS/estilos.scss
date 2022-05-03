@@ -1,1 +1,17 @@
 // npm run watch-css
+@import "otros/variables";
+@import "otros/botones";
+@import "otros/cards";
+@import "otros/gridnombres";
+
+@import "base/base";
+@import "base/images";
+@import "base/text";
+
+@import "pages/galeria";
+@import "pages/somos";
+@import "pages/index";
+@import "pages/contacto";
+@import "pages/tiendas";
+
+@import "vendors/mediaq";

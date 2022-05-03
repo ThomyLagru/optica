@@ -1,0 +1,244 @@
+.colorBoton {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin-top: 10%; }
+
+.colorBoton__2 {
+  margin-top: 20%; }
+
+.InicioCartas {
+  width: 250px;
+  height: 300px; }
+
+.main {
+  grid-area: main; }
+
+.footer {
+  grid-area: footer; }
+
+.aside {
+  grid-area: aside; }
+
+.nav {
+  grid-area: nav; }
+
+.fotos {
+  grid-area: fotos; }
+
+.sucur {
+  grid-area: sucur; }
+
+.info {
+  grid-area: info; }
+
+.slide {
+  grid-area: slide; }
+
+body {
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px; }
+
+a {
+  text-decoration: none; }
+
+.pie {
+  border-style: groove; }
+
+.pieconf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  grid-area: header; }
+
+.nav__col {
+  background-color: white;
+  width: 490px;
+  border-style: groove; }
+
+.nav__col--P {
+  background-color: white;
+  width: 420px;
+  border-style: groove; }
+
+.imagen {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between; }
+
+.imagen__P {
+  width: 80px;
+  height: 70px; }
+
+.imagen__G {
+  width: 600px;
+  height: 400px;
+  margin: auto; }
+
+.imagen__Q {
+  width: 300px;
+  height: 250px; }
+
+.im__R {
+  border-radius: 10px; }
+
+.imAs {
+  border-radius: 15px;
+  border: solid 1px black; }
+
+.imagen__T {
+  width: 600px;
+  height: 600px;
+  margin: auto; }
+
+.imagen__I {
+  width: 249px;
+  height: 200px; }
+
+.txti {
+  text-align: left; }
+
+.txtd {
+  text-align: right; }
+
+.txtcen {
+  text-align: center; }
+
+.txtAb {
+  margin-right: 700px;
+  position: relative; }
+
+.txtAb__A {
+  margin-top: 5%; }
+
+.txtAb__B {
+  margin-top: 10%; }
+
+.txtblk {
+  color: black; }
+
+.gallery {
+  height: 60%;
+  width: 90%;
+  display: flex;
+  margin: 5% auto 0;
+  box-sizing: border-box; }
+
+.image-box {
+  margin: 1%;
+  flex-grow: 0.5;
+  flex-basis: 0;
+  transition: .5s; }
+
+.image-box img {
+  width: 90%;
+  height: 100vh;
+  object-fit: cover;
+  transition: .4s; }
+
+.image-box:hover {
+  flex-basis: 20%; }
+
+.activado {
+  flex-basis: 20%; }
+
+.gallery:hover .activado {
+  flex-basis: 0; }
+
+.image-box:nth-child(1):hover {
+  flex-basis: 20%; }
+
+.mnconf {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; }
+
+.form {
+  width: 300px;
+  margin: auto; }
+
+@media (max-width: 360px) {
+  body {
+    font-size: 18px; }
+  * {
+    margin: 0;
+    padding: 0; }
+  footer a {
+    font-size: 27px; }
+  footer div img {
+    width: 30px; }
+  nav a {
+    font-size: 30px; }
+  .home {
+    display: grid;
+    grid-template-areas: "header" "nav" "main" "footer"; }
+  .header {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 10vh; }
+  .im__R {
+    width: 90vw;
+    margin: auto; }
+  .nav__col--P {
+    width: 90vw;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: left;
+    margin: auto; }
+  .pieconf {
+    flex-flow: column wrap;
+    width: 100vw; }
+  .InicioCartas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90vw; }
+    .InicioCartas p {
+      font-size: 30px; }
+    .InicioCartas h5 {
+      font-size: 30px; }
+  .imagen__I {
+    width: 90vw; }
+  .img__Footer {
+    width: 85vw; }
+  .txtAb__A--A {
+    margin-top: 50px; }
+  .galtab {
+    display: grid;
+    grid-template-areas: "header" "nav" "slide" "footer"; }
+  .nav__col {
+    width: 95vw; }
+  .img__Footer--P {
+    width: 85vw; }
+  .header__P {
+    width: 90vw; }
+  .carousel {
+    width: 97vw; }
+  .colorBoton {
+    margin-top: 0%;
+    width: 60px;
+    height: 40px; }
+  .sucursales {
+    display: grid;
+    grid-template-areas: "header" "nav" "sucur" "footer"; }
+  .txtcolor {
+    color: white;
+    margin-bottom: 80%;
+    margin-left: 80%; }
+  .qsomos {
+    display: grid;
+    grid-template-areas: "header" "nav" "info" "footer"; }
+  .somos__F {
+    font-size: 20px; }
+  .formu {
+    display: grid;
+    grid-template-areas: "header" "nav" "completar" "footer"; }
+  .form {
+    font-size: 23px; } }
