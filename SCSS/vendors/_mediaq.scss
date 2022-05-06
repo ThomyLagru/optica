@@ -24,7 +24,7 @@
 	}
 	.home {
 		display: grid;
-		grid-template-areas: "header" "nav" "main" "footer";
+		grid-template-areas: "header" "nav" "main" "main2" "footer";
 	}
 	.header {
 		display: flex;
@@ -41,6 +41,9 @@
 		flex-flow: column nowrap;
 		align-items: left;
 		margin: auto;
+	}
+	.imagenBanner {
+		height: 0vh;
 	}
 	.pieconf {
 		flex-flow: column wrap;

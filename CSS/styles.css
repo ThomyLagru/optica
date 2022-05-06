@@ -14,6 +14,12 @@
 .main {
   grid-area: main; }
 
+.main2 {
+  grid-area: main2; }
+
+.bannerindex {
+  grid-area: banner; }
+
 .footer {
   grid-area: footer; }
 
@@ -67,6 +73,9 @@ a {
   width: 420px;
   border-style: groove; }
 
+.margenAuto {
+  margin: auto; }
+
 .imagen {
   width: 400px;
   height: 400px;
@@ -102,6 +111,11 @@ a {
   width: 249px;
   height: 200px; }
 
+.imagenBanner {
+  width: 90vw;
+  height: 30vh;
+  margin-left: 2%; }
+
 .txti {
   text-align: left; }
 
@@ -118,11 +132,20 @@ a {
 .txtAb__A {
   margin-top: 5%; }
 
+.txtAb__A--A {
+  margin-top: 2%; }
+
 .txtAb__B {
-  margin-top: 10%; }
+  margin-left: 3%; }
+
+.txtRed {
+  color: red; }
 
 .txtblk {
   color: black; }
+
+.titulo {
+  color: #8187dc; }
 
 .gallery {
   height: 60%;
@@ -157,7 +180,7 @@ a {
 
 .mnconf {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between; }
 
 .form {
@@ -178,7 +201,7 @@ a {
     font-size: 30px; }
   .home {
     display: grid;
-    grid-template-areas: "header" "nav" "main" "footer"; }
+    grid-template-areas: "header" "nav" "main" "main2" "footer"; }
   .header {
     display: flex;
     flex-flow: column nowrap;
@@ -192,6 +215,8 @@ a {
     flex-flow: column nowrap;
     align-items: left;
     margin: auto; }
+  .imagenBanner {
+    height: 0vh; }
   .pieconf {
     flex-flow: column wrap;
     width: 100vw; }

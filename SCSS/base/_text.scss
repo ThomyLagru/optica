@@ -14,10 +14,19 @@
 .txtAb__A {
 	margin-top: 5%;
 }
+.txtAb__A--A{
+	margin-top: 2%;
+}
 .txtAb__B {
-	margin-top: 10%;
+	margin-left: 3%;
 }
 
+.txtRed {
+	color: $colRed
+}
 .txtblk {
 	color: $colBlk;
+}
+.titulo {
+	color: $colTit;
 }
