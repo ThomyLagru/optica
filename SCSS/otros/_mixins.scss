@@ -1,0 +1,16 @@
+// maps
+
+$textos:("titulo":rgb(129, 135, 220), "desc":rgb(255, 0, 0));
+
+@each $name, $colortxt in $textos{
+  .color-#{$name}{
+    color: $colortxt;
+  }
+}
+
+// mixin
+
+@mixin sizes($width, $height) {
+  height: $height;
+  width: $width;
+}

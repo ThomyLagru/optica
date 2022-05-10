@@ -1,21 +1,17 @@
 .imagen{
-  width: 400px;
-  height: 400px;
+  @include sizes(400px, 400px);
   display: flex;
   justify-content: space-between;
 }
 .imagen__P {
-  width: 80px;
-  height: 70px;
+  @include sizes(80px, 70px);
 }
 .imagen__G {
-  width: 600px;
-  height: 400px;
+  @include sizes(600px, 400px);
   margin: auto;
 }
 .imagen__Q {
-  width: 300px;
-  height: 250px;
+  @include sizes(300px, 250px);
 }
 .im__R {
   border-radius: 10px;
@@ -25,16 +21,13 @@
   border: solid 1px black;
 }
 .imagen__T {
-  width: 600px;
-  height: 600px;
+  @include sizes(600px, 600px);
   margin: auto;
 }
 .imagen__I {
-  width: 249px;
-  height: 200px;
+  @include sizes(249px, 200px);
 }
 .imagenBanner {
-  width: 90vw;
-  height: 30vh;
+  @include sizes(90vw, 30vh);
   margin-left: 2%;
 }

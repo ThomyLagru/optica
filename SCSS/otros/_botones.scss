@@ -6,5 +6,6 @@
 }
 
 .colorBoton__2 {
+  @extend .colorBoton;
   margin-top: 20%;
 }
