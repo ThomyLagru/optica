@@ -29,9 +29,6 @@
 .nav {
   grid-area: nav; }
 
-.fotos {
-  grid-area: fotos; }
-
 .sucur {
   grid-area: sucur; }
 
@@ -40,6 +37,12 @@
 
 .slide {
   grid-area: slide; }
+
+.slides {
+  grid-area: slides; }
+
+.fotosgal {
+  grid-area: fotosgal; }
 
 .color-titulo {
   color: #8187dc; }
@@ -237,7 +240,7 @@ a {
     margin-top: 50px; }
   .galtab {
     display: grid;
-    grid-template-areas: "header" "nav" "slide" "footer"; }
+    grid-template-areas: "header" "nav" "slide" "slides" "footer"; }
   .nav__col {
     width: 95vw; }
   .img__Footer--P {
@@ -250,6 +253,9 @@ a {
     margin-top: 0%;
     width: 60px;
     height: 40px; }
+  .gallery {
+    height: 0px;
+    width: 0px; }
   .sucursales {
     display: grid;
     grid-template-areas: "header" "nav" "sucur" "footer"; }

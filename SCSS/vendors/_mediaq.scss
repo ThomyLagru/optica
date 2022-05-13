@@ -74,7 +74,7 @@
   // @media (max-width:360px){
 	.galtab {
 		display: grid;
-		grid-template-areas: "header" "nav" "slide" "footer";
+		grid-template-areas: "header" "nav" "slide" "slides" "footer";
 	}
 	.nav__col {
 		width: 95vw;
@@ -92,6 +92,10 @@
 		margin-top: 0%;
 		width: 60px;
 		height: 40px;
+	}
+	.gallery {
+		height: 0px;
+		width: 0px;
 	}
 
   // @media (max-width:360px){
