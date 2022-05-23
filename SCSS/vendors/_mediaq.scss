@@ -19,6 +19,8 @@
 	}
 	nav {
 		a {
+			display: flex;
+			flex-direction: row;
 			font-size: 30px;
 		}
 	}
@@ -47,7 +49,9 @@
 		width: 0px;
 	}
 	.pieconf {
-		flex-flow: column nowrap;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 		width: 100vw;
 	}
 	.InicioCartas {
@@ -142,6 +146,6 @@
 	}
 	.cuadrado{
 		width: 85vw;
-		height: 90vh;
+		height: 93vh;
 	}
 }

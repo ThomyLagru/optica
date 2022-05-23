@@ -267,6 +267,8 @@ footer div p {
   footer div img {
     width: 30px; }
   nav a {
+    display: flex;
+    flex-direction: row;
     font-size: 30px; }
   .home {
     display: grid;
@@ -288,7 +290,9 @@ footer div p {
     height: 0px;
     width: 0px; }
   .pieconf {
-    flex-flow: column nowrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100vw; }
   .InicioCartas {
     display: flex;
@@ -352,4 +356,4 @@ footer div p {
     font-size: 23px; }
   .cuadrado {
     width: 85vw;
-    height: 90vh; } }
+    height: 93vh; } }
