@@ -289,6 +289,9 @@ footer div p {
   .imgbaner {
     height: 0px;
     width: 0px; }
+  .txtder--M {
+    margin: auto;
+    margin-left: 20%; }
   .pieconf {
     display: flex;
     flex-direction: row;
