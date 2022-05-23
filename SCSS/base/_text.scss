@@ -17,16 +17,17 @@
 .txtAb__A--A{
 	margin-top: 2%;
 }
+.txtder{
+	margin-left: 30%;
+}
 .txtAb__B {
-	margin-left: 3%;
+	padding-left: 4%;
 }
 
-.txtRed {
-	color: $colRed
+.txtcolor {
+	width: 80px;
+	background-color: rgba(0, 0, 116, 0.403);
+	color: $colWht;
+	font-size: 12px;
+	margin-left: 70%;
 }
-// .txtblk {
-// 	color: $colBlk;
-// }
-// .titulo {
-// 	color: $colTit;
-// }

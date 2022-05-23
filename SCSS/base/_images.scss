@@ -4,7 +4,11 @@
   justify-content: space-between;
 }
 .imagen__P {
-  @include sizes(80px, 70px);
+  @include sizes(30px, 30px);
+}
+.img__Footer{
+  @include sizes (90px, 50px);
+  margin-left: 50%;
 }
 .imagen__G {
   @include sizes(600px, 400px);
@@ -28,6 +32,16 @@
   @include sizes(249px, 200px);
 }
 .imagenBanner {
-  @include sizes(90vw, 30vh);
+  @include sizes(90vw, 40vh);
   margin-left: 2%;
+}
+
+.imagenpromo {
+  @include sizes (250px, 350px)
+}
+.imagenindex {
+  @include sizes (80px, 70px)
+}
+.imagenlogo{
+  @include sizes (50px, 50px)
 }

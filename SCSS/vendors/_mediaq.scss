@@ -36,24 +36,28 @@
 		margin: auto;
 	}
 	.nav__col--P {
-		width: 90vw;
+		width: 95vw;
 		display: flex;
 		flex-flow: column nowrap;
 		align-items: left;
 		margin: auto;
 	}
 	.imgbaner {
-		height: 0vh;
+		height: 0px;
+		width: 0px;
 	}
 	.pieconf {
-		flex-flow: column wrap;
+		flex-flow: column nowrap;
 		width: 100vw;
 	}
 	.InicioCartas {
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
-		width: 90vw;
+		width: 85vw;
+		height: 10%;
+		margin: auto;
+		margin-top: 1%;
 		p {
 			font-size: 30px;
 		}
@@ -62,14 +66,24 @@
 		}
 	}
 	.imagen__I {
-		width: 90vw;
+		width: 85vw;
+	}
+	.imagenpromo{
+		width: 85vw;
+		height: 10%;
 	}
 	.img__Footer {
-		width: 85vw;
+		width: 35vw;
+		margin: auto;
 	}
 	.txtAb__A--A {
 		margin-top: 50px;
 	}
+	.tituloh2 {
+		font-size: 40px;
+		text-align: center;
+	}
+
 
   // @media (max-width:360px){
 	.galtab {
@@ -125,5 +139,9 @@
 	}
 	.form {
 		font-size: 23px;
+	}
+	.cuadrado{
+		width: 85vw;
+		height: 90vh;
 	}
 }

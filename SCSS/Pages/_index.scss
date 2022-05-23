@@ -3,3 +3,10 @@
   flex-flow: row wrap;
   justify-content: space-between;
 }
+
+.informacionindex {
+  display: flex;
+  flex-wrap: column wrap;
+  justify-content: space-around;
+  margin-top: 5%;
+}
