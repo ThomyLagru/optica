@@ -232,23 +232,23 @@
 // }
 
 
-let prueba = parseInt(prompt ("Ingresa un numero del 1 al 5 y obten el significado del mismo :)"));
+// let prueba = parseInt(prompt ("Ingresa un numero del 1 al 5 y obten el significado del mismo :)"));
 
-while (prueba == "") {
-    alert("Numero Incorrecto");
-}if (prueba == 1) {
-    alert("El número 1 denota a una persona que sacrificó una parte de sí misma en el pasado.");
-}else if(prueba == 2){
-    alert("El número 2 define una personalidad que necesita abandonar el materialismo.")
-}else if (prueba == 3) {
-    alert("El número 3 muestra una personalidad que no pudo expresarse a sí misma en el pasado. Por lo tanto, tiene emociones reprimidas en esta vida.");
-}else if (prueba == 4) {
-    alert("El número 4 denota a alguien que fue abandonado por su familia en el pasado, por lo que con frecuencia se siente no apoyado.");
-}else if (prueba == 5) {
-    alert("El número 5 muestra una personalidad egoísta, que está aprendiendo a dejar de serlo.");
-}else if (prueba => 6 || prueba == 0) {
-    alert("Numero incorrecto")
-}
+// while (prueba == "") {
+//     alert("Numero Incorrecto");
+// }if (prueba == 1) {
+//     alert("El número 1 denota a una persona que sacrificó una parte de sí misma en el pasado.");
+// }else if(prueba == 2){
+//     alert("El número 2 define una personalidad que necesita abandonar el materialismo.")
+// }else if (prueba == 3) {
+//     alert("El número 3 muestra una personalidad que no pudo expresarse a sí misma en el pasado. Por lo tanto, tiene emociones reprimidas en esta vida.");
+// }else if (prueba == 4) {
+//     alert("El número 4 denota a alguien que fue abandonado por su familia en el pasado, por lo que con frecuencia se siente no apoyado.");
+// }else if (prueba == 5) {
+//     alert("El número 5 muestra una personalidad egoísta, que está aprendiendo a dejar de serlo.");
+// }else if (prueba => 6 || prueba == 0) {
+//     alert("Numero incorrecto")
+// }
 
 
 // let numeroIngresado= prompt("Ingresa un precio")
@@ -262,3 +262,212 @@ while (prueba == "") {
 // }else{
 //     console.log("El precio es mayor a 750");
 // }
+
+// dia 4 
+
+// function hola() {
+//     console.log("Holis");
+// }
+
+// function holaPersona(momento,nombre) {
+//     console.log("Holis " + momento+ nombre);
+// }
+
+// let nombre = prompt("ingresa tu nombre");
+
+// hola();
+// holaPersona("amigo ",nombre)
+// holaPersona("ami " , "Thomi" );
+// holaPersona("Amiwi " , "Thomi");
+
+
+// function sumar(numeroA,numeroB) {
+//     let suma = numeroA+numeroB;
+//     return suma;
+// }
+
+// function restar(numeroA,numeroB) {
+//     let resta = numeroA - numeroB;
+//     return resta;
+// }
+
+// function multiplicar(numeroA,numeroB) {
+//     let multiplicacion = numeroA * numeroB;
+//     return multiplicacion;
+// }
+
+// function dividir(numeroA,numeroB) {
+//     let division = numeroA / numeroB;
+//     return division;
+// }
+
+// function mostrar(mensaje) {
+//     console.log(mensaje);
+// }
+
+// function calcular(numeroA,numeroB,signo) {
+//     let resultado = 0;
+//     switch (signo) {
+//         case "+":
+//             resultado = sumar(numeroA,numeroB)
+//             break;
+    
+//         case"-":
+//             resultado = restar(numeroA,numeroB);
+//             break;
+        
+//         case"*":
+//             resultado = multiplicar(numeroA,numeroB);
+//             break;
+        
+//         case "/":
+//             resultado = dividir(numeroA,numeroB);
+//             break;
+        
+//         default:
+//             console.log("numero no valido");
+//     }
+//     return resultado;
+// }
+
+// let numero1 = parseInt(prompt("Ingresa un numero para la operacion"));
+// let numero2 = parseInt(prompt("Ingresa otro numero para la operacion"));
+// let operacion = prompt("Ingresa el signo de la operacion: + - * /")
+
+// mostrar(calcular(numero1,numero2,operacion));
+
+
+
+// let variableGlobal = "Soy una variable global"
+// console.log(variableGlobal);
+
+// function cambiar(params) {
+//     variableGlobal = "Me cambiaron desde una funcion"
+//     console.log(variableGlobal);
+// }
+
+// cambiar()
+
+// funcion anonima === simplificada
+// const suma = function (a, b) {
+//     return a + b;
+// }
+
+// console.log(suma(4,6));
+
+// funcion flecha === ultrasimplificada
+
+// const resta = (a, b) =>{
+//     return a-b;
+// }
+
+// const division =(a,b)=>{return a/b};
+// const multiplicacion =(a,b)=>a*b;
+// const msj = x =>"el mensaje es "+x;
+
+
+// const suma = (a,b) => a+b
+// const resta = (a,b) => a-b
+
+// const iva = x => x * 0.21
+
+// let precioProducto = 500
+// let descuento = 50
+
+// let nuevoPrecio = resta(suma(precioProducto, iva(precioProducto)), descuento)
+// console.log(nuevoPrecio);
+
+
+// dia 5
+
+//objetos litertales
+
+// let persona1 = {
+//     nombre:"Thomi",
+//     edad:25,
+//     pais:"Arg"
+// }
+// console.log(persona1);
+// console.log(persona1.nombre);
+// console.log(persona1.edad);
+// console.log(persona1.pais);
+// console.log(["nombre"]); //no priorizar
+
+
+// funcion constructora
+
+// function Persona(nombre, edad, pais, ) {
+//    this.nombre = nombre;
+//    this.edad = edad;
+//    this.pais = pais;
+
+//    this.saludar = ()=>{console.log("Hola me llamo "+ this.nombre);}
+// }
+
+// let persona3 = new Persona("Marcos", 20, "Alemania")
+// console.log(persona3.nombre);
+// persona3.saludar()
+
+// console.log("pais" in persona3); 
+
+// for(const propiedad in persona3){
+//     console.log(propiedad + ": " + persona3[propiedad]);
+// }
+
+// class Producto{
+//     constructor(nombre, precio){
+//         this.nombre = nombre;
+//         this.precio = precio;
+//     }
+//     sumarIva(){
+//         this.precio = this.precio * 1.21;
+//     }
+// }
+// let producto1 = new Producto("Peras", 200)
+
+// for(const prop in producto1){
+//     console.log(prop + ": " + producto1[prop]);
+// }
+
+// function ingreso(mensaje) {
+//     let dato = prompt("mensaje");
+//     return dato;
+// }
+// let nombreIngresado = ingreso("ingresa tu nombre")
+// let edadIngresada = ingreso("Ingresa tu edad")
+
+// let persona2 = new Persona(nombreIngresado, edadIngresada , "Argentina");
+// console.log(persona2);
+
+
+// function crearPersona(nombre, edad, pais) {
+//     let persona = new Persona(nombre, edad, pais);
+//     return persona;
+// }
+
+
+
+
+const sumar = function (numeroA, numeroB) {
+    return numeroA+numeroB;
+}
+
+const descuento = function (resultado, desc1) {
+    return resultado*desc1;
+}
+
+
+let numeroA = parseInt(prompt ("Ingresa el precio del producto"));
+let numeroB = parseInt(prompt ("Ingresa el precio del otro producto"));
+let resultado = sumar
+let desc1 = parseFloat(0.90)
+let precioF = alert("Tu precio final es de " + (numeroA+numeroB)*desc1)
+
+function mostrar(mensaje) {
+    console.log(mensaje);
+}
+
+mostrar(sumar(numeroA, numeroB));
+mostrar(descuento((numeroA+numeroB), desc1));
+
+
