@@ -446,28 +446,163 @@
 // }
 
 
+// dia 6 -- arrays
+// let z = 1
+// const letras = ["A", "B", "C"];
+// const numeros = [1, 2, 3, 4, 5, 6, 7, 8 ,9];
+// const mixto = [true, 0, "Falso", [20,10,0], z];
+
+// // console.log(letras[1]);
+// // console.log(numeros[7]);
+// // console.log("tamano del array mixto " +mixto.length);
+
+// // let result = numeros[0] + numeros[7];
+// // console.log(result);
+
+// for (let i = 0; i < letras.length; i++){
+//     console.log(letras[i]);
+// }
+
+// // console.log(numeros.toString());
+
+// //metodo que agrega elementos al final de la array (push)
+
+// numeros.push(200,900,808,000)
+// console.log(numeros);
+
+// // metodo para agregar elementos al principio de la array (unshift)
+
+// numeros.unshift(0);
+// console.log(numeros);
+
+// // metodo para eliminar el elemento final del array (pop)
+
+// numeros.pop();
+// console.log(numeros);
+
+// // elimina los elementos del principio del array (shift)
+
+// numeros.shift();
+// console.log(numeros);
+
+// // unir arrays concat()
+
+// const cubiertos = ["Tenedor", "Cuchillo", "Cuchara", "Palitos"];
+// const platos =["Plato hondo", "Plato playo", "Plato de postre", "Tabla de madera"];
+
+// const despensa = cubiertos.concat(platos);
+
+// console.log(despensa);
+// console.log(cubiertos.indexOf("Tenedor")); // devuelve el indice (numero) en donde esta ubicado
+// console.log(platos.includes("Plato hondo")); // si existe da true, si no da false
 
 
-const sumar = function (numeroA, numeroB) {
-    return numeroA+numeroB;
+// // array de objetos
+// const persona1 = {nombre:"x" , edad:"0", direccion:"x"}
+
+// const personas = [{nombre:"Thomas", edad:18, direccion:"abc 123"},
+//     {nombre:"Julieta", edad:19, direccion:"def 456"},
+//     persona1
+// ]
+
+// // // funcion constructora
+//  function Persona(nombre, edad, direccion) {
+//     this.nombre = nombre;
+//     this.edad= edad;
+//     this.direccion = direccion;
+// }
+
+// // // funcion para crear personas
+// function crearPersonas(nombre, edad, direccion) {
+//     const persona = new Persona(nombre, edad, direccion)
+//     return persona;
+// }
+
+// // // pusheo al array
+// function cargarPersona(persona) {
+//     personas.push(persona)
+// }
+
+// const creacion=crearPersonas(prompt("Agrega tu nombre"), parseInt(prompt("Agrega tu edad")), prompt("Agrega tu direccion"));
+
+// cargarPersona(creacion);
+// console.log(personas);
+
+// // // forof 
+// for (const persona of personas) {
+// //     // voy por el array de objetos
+// //    console.log(persona.nombre);
+// //     console.log(persona.edad);
+// //     console.log(persona.direccion);
+// //     // voy por el objeto en si
+//    for (const propiedad in persona){
+//         console.log(persona[propiedad]);
+//     }
+// }
+
+
+// const anteojos = [{nombre:"Barcelona", precio: 22000},
+//     {nombre:"París", precio: 21000},
+//     {nombre:"Amsterdam", precio: 25000},
+//     {nombre:"Tokyo", precio: 13700},
+//     {nombre:"Hong Kong", precio: 14000},
+//     {nombre:"Seúl", precio: 15000},
+//     {nombre:"Budapest", precio: 15000},
+//     {nombre:"Praga", precio: 15000},
+//     {nombre:"Bruselas", precio: 16000},
+//     {nombre:"Munich", precio: 17000},
+//     {nombre:"Londres", precio: 17500},
+// ]
+
+// console.log(anteojos);
+
+
+// function Productos(nombre, precio, tipo) {
+//     this.nombre = nombre;
+//     this.precio= precio;
+//     this.tipo = tipo;
+// }
+ 
+// function crearAnteojos(nombre, precio) {
+//     const anteojo = new Productos(nombre, precio)
+//     return anteojo;
+// }
+
+// function cargarAnteojos(anteojo) {
+//     anteojos.push(anteojo)
+// }
+
+// const modelos=crearAnteojos("Barcelona", 22000);
+
+// cargarAnteojos(modelos);
+
+// dia 7
+
+class anteojo {
+    constructor(nombre, precio, tipo) {
+        this.nombre = nombre;
+        this.precio = parseInt(precio);
+        this.tipo = tipo;
+    }
 }
 
-const descuento = function (resultado, desc1) {
-    return resultado*desc1;
-}
+const sol1 = new anteojo ("Londres", 17500, "Sol");
+const sol2 = new anteojo ("Munich", 17000,"Sol");
+const sol3 = new anteojo ("Bruselas", 16000,"Sol");
+const sol4 = new anteojo ("Praga", 15000,"Sol");
+const sol5 = new anteojo ("Budapest", 15000,"Sol");
+const sol6 = new anteojo ("Seúl", 15000,"Sol");
+const sol7 = new anteojo ("Hong Kong", 14000, "Sol");
+const sol8 = new anteojo ("Tokyo", 13700, "Sol");
+let anteojosSol = [];
+
+const leer1 = new anteojo ("Amsterdam",25000,"Leer");
+const leer2 = new anteojo ("Barcelona",22000,"Leer");
+const leer3 = new anteojo ("París",21000,"Leer");
+let anteojosLeer = [];
 
 
-let numeroA = parseInt(prompt ("Ingresa el precio del producto"));
-let numeroB = parseInt(prompt ("Ingresa el precio del otro producto"));
-let resultado = sumar
-let desc1 = parseFloat(0.90)
-let precioF = alert("Tu precio final es de " + (numeroA+numeroB)*desc1)
-
-function mostrar(mensaje) {
-    console.log(mensaje);
-}
-
-mostrar(sumar(numeroA, numeroB));
-mostrar(descuento((numeroA+numeroB), desc1));
-
-
+anteojosSol.push(sol1,sol2,sol3,sol4,sol5,sol6,sol7,sol8);
+anteojosLeer.push(leer1,leer2, leer3)
+console.log(anteojosSol);
+console.log(anteojosLeer);
