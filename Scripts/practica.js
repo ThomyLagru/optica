@@ -22,18 +22,6 @@ mostrar(sumar(numeroA, numeroB));
 mostrar(descuento((numeroA+numeroB), desc1));
 
 // tarea arrays 
-const anteojos = ["París", "Barcelona", "Amsterdam", "Tokyo", "Hong Kong", "Seúl", "Budapest", "Praga", "Bruselas", "Munich", "Londres"];
-const precios = [21000, 22000, 25000, 13700, 14000, 15000, 15000, 15000, 16000, 17000, 17500];
-
-const almacen = anteojos.concat(precios);
-
-console.log(almacen);
-console.log(anteojos.includes(prompt("Introduci el modelo del anteojo")));
-console.log(anteojos);
-console.log(precios);
-
-
-
 class anteojo {
     constructor(nombre, precio, tipo) {
         this.nombre = nombre;
@@ -42,10 +30,23 @@ class anteojo {
     }
 }
 
-const anteojo1 = new anteojo ("Barcelona", 22000, "Sol");
-const anteojo2 = new anteojo ("Amsterdam", 21000,"Sol");
-
+const sol1 = new anteojo ("Londres", 17500, "Sol");
+const sol2 = new anteojo ("Munich", 17000,"Sol");
+const sol3 = new anteojo ("Bruselas", 16000,"Sol");
+const sol4 = new anteojo ("Praga", 15000,"Sol");
+const sol5 = new anteojo ("Budapest", 15000,"Sol");
+const sol6 = new anteojo ("Seúl", 15000,"Sol");
+const sol7 = new anteojo ("Hong Kong", 14000, "Sol");
+const sol8 = new anteojo ("Tokyo", 13700, "Sol");
 let anteojosSol = [];
 
-anteojosSol.push(anteojo1,anteojo2);
+const leer1 = new anteojo ("Amsterdam",25000,"Leer");
+const leer2 = new anteojo ("Barcelona",22000,"Leer");
+const leer3 = new anteojo ("París",21000,"Leer");
+let anteojosLeer = [];
+
+
+anteojosSol.push(sol1,sol2,sol3,sol4,sol5,sol6,sol7,sol8);
+anteojosLeer.push(leer1,leer2, leer3)
 console.log(anteojosSol);
+console.log(anteojosLeer);
