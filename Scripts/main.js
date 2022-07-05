@@ -634,6 +634,12 @@ const ossiraLeer = anteojosLeer.filter((el)=>{
 })
 console.log(ossiraLeer);
 
+
+const baratos = anteojosSol.slice(3, 8)
+console.log(baratos);
+
+
+
 const sumar = function (numeroA, numeroB) {
     return numeroA+numeroB;
 }
