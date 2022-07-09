@@ -223,6 +223,12 @@ footer div p {
 .image-box:nth-child(1):hover {
   flex-basis: 20%; }
 
+.filterProduc {
+  display: block; }
+
+.MargenBot {
+  margin-top: 200px; }
+
 .mnconf {
   display: flex;
   flex-flow: row wrap;
