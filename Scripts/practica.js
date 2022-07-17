@@ -62,31 +62,21 @@ console.log(baratos);
 
 
 
-const sumar = function (numeroA, numeroB) {
-    return numeroA+numeroB;
+
+let multiply = parseFloat(0.90);
+let diezPorciento = document.getElementsByClassName("card-text");
+for (let i = 0; i < diezPorciento.length; i++) {
+    diezPorciento[i].innerHTML *= multiply;
 }
 
-const descuento = function (resultado, desc1) {
-    return resultado*desc1;
-}
+const newsletter = document.createElement("p");
+newsletter.innerHTML = '<a class="nav-link" href="./Pages/test.html">'
+document.body.append(newsletter)
 
-let numeroA = parseInt(prompt ("Ingresa el precio del producto"));
-let numeroB = parseInt(prompt ("Ingresa el precio del otro producto"));
-let resultado = sumar;
-let desc1 = parseFloat(0.90)
-let precioF = alert("Tu precio final con descuento es de " + (numeroA+numeroB)*desc1);
 
-function mostrar(mensaje) {
-    console.log(mensaje);
-}
 
-mostrar(sumar(numeroA, numeroB));
-mostrar(descuento((numeroA+numeroB), desc1));
-
-let agregar = document.getElementById("prueba")
-agregar.innerText = "Hola"
-
-botonP = document.querySelector(".botonP")
-botonP.onclick = ()=>{
-    agregar.innerText = "Chau"
-}
+const titulo = document.getElementById("anuncio")
+console.log(titulo);
+const anuncios = document.createElement("h3")
+anuncios.textContent = "Descuentos"
+titulo.appendChild(anuncios)

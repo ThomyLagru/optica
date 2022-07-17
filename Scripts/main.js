@@ -707,3 +707,29 @@
 // btnV.onclick = ()=>{
 //     p.innerText = "Modelos Vulk"
 // }
+
+
+// dia 10
+//application 
+
+// localStorage.setItem("mensaje", "Mensaje x storage");
+// let mensaje = localStorage.getItem("mensaje");
+
+// sessionStorage.setItem("Numeros", [1,2,3,4,5,6,7,8,9,0]); //el array pasa a string
+// let nums = sessionStorage.getItem("Numeros").split(",");
+// localStorage.removeItem("mensaje");
+
+
+
+// const usuario = {nombre:"M", email:"M@gmail.com", pass:3242};
+
+// const userJS=JSON.stringify(usuario);
+
+// localStorage.setItem("usuario", userJS);
+
+// const usuarioLS = JSON.parse(userJS);
+
+// localStorage.getItem(usuarioLS);
+// console.log(usuarioLS);
+
+// dia 11
