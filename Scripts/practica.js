@@ -1,4 +1,3 @@
-
 // tarea arrays 
 class anteojo {
     constructor(nombre, precio, tipo, marca) {
@@ -64,19 +63,25 @@ console.log(baratos);
 
 
 let multiply = parseFloat(0.90);
-let diezPorciento = document.getElementsByClassName("card-text");
-for (let i = 0; i < diezPorciento.length; i++) {
-    diezPorciento[i].innerHTML *= multiply;
-}
+let diezPorciento = document.getElementsByClassName("card-text").value;
+let sum = diezPorciento * multiply;
+console.log(sum);
+
+
+
+
+
+let ds = document.getElementById("abcd");
+console.log(ds);
+
+const p1 = document.createElement("p");
+p1.innerHTML = "Descuentos todo julio!"
 
 const newsletter = document.createElement("p");
-newsletter.innerHTML = '<a class="nav-link" href="./Pages/test.html">'
-document.body.append(newsletter)
+newsletter.innerHTML = '  <a href="./Pages/test.html">Unite a nuestro Newsletter</a>'
 
+p1.classList.add("anuncio")
+newsletter.classList.add("anuncio")
 
-
-const titulo = document.getElementById("anuncio")
-console.log(titulo);
-const anuncios = document.createElement("h3")
-anuncios.textContent = "Descuentos"
-titulo.appendChild(anuncios)
+ds.appendChild(p1);
+ds.appendChild(newsletter)

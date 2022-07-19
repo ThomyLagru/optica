@@ -241,8 +241,10 @@ footer div p {
   margin-top: 5%; }
 
 .anuncio {
-  background-color: blueviolet;
-  font-size: 10px; }
+  background-color: #8187dc;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center; }
 
 .form {
   width: 300px;
