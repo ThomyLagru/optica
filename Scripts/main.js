@@ -733,3 +733,7 @@
 // console.log(usuarioLS);
 
 // dia 11
+// no vimos nada xdxdxdxdxd
+
+// dia 12
+

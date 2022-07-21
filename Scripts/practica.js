@@ -62,13 +62,11 @@ console.log(baratos);
 
 
 
-let multiply = parseFloat(0.90);
-let diezPorciento = document.getElementsByClassName("card-text").value;
-let sum = diezPorciento * multiply;
-console.log(sum);
-
-
-
+// let multiply = parseFloat(0.90);
+// let diezPorciento =Number( document.getElementsByClassName("card-text").value);
+// for (let i = 0; i < diezPorciento.length; i++) {
+//     diezPorciento[i].innerHTML *= multiply;
+// }
 
 
 let ds = document.getElementById("abcd");
@@ -85,3 +83,30 @@ newsletter.classList.add("anuncio")
 
 ds.appendChild(p1);
 ds.appendChild(newsletter)
+
+
+
+const index = document.querySelector(".over")
+
+function crearHtml(array) {
+    let html;
+    for (const anteojosSol of array) {
+        html = `
+    <section>
+        <section class="txtAb__A row mnconf main2">
+        <h2 class="color-titulo tituloh2">Anteojos con Descuento</h2>
+        <div class="card-group g-4 txtAb__B">
+          <div class="col">
+            <div class="card InicioCartas col-sm-12">
+              <div class="card-body">
+                <h5 class="card-title">${anteojosSol.nombre}</h5>
+                <p class="card-text">${anteojosSol.precio}</p>
+                <a href="/Pages/error.html" class="btn botoncard">Ver más</a>
+                <!-- este texto esta en stand by hasta el momento de tener la info correcta -->
+              </div>
+            </div>
+          </div>
+    </section>`;
+        index.innerHTML += html;
+    }
+}
