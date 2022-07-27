@@ -110,3 +110,10 @@ function crearHtml(array) {
         index.innerHTML += html;
     }
 }
+
+
+Swal.fire({
+    title:'Bienvenido a Optica Vedere',
+    width: 400,
+
+})
