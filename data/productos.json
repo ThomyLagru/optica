@@ -1,0 +1,14 @@
+[
+    {"nombre":"Londres", "precio" :17500, "tipo":"Sol", "modelo": "Vulk" , "img":"../Images/anteojo1.jpg"},
+    {"nombre":"Munich", "precio": 17000, "tipo" : "Sol", "modelo" : "Vulk", "img":"../Images/anteojo1.jpg"},
+    {"nombre":"Bruselas", "precio": 16000, "tipo" : "Sol", "modelo" : "Rusty","img":"../Images/anteojo1.jpg"},
+    {"nombre":"Praga","precio": 15000, "tipo": "Sol", "modelo": "Ossira","img":"../Images/anteojo1.jpg"},
+    {"nombre": "Budapest", "precio": 15000, "tipo": "Sol", "modelo": "Ossira","img":"../Images/anteojo1.jpg"},
+    {"nombre": "Seúl", "precio": 15000, "tipo": "Sol", "modelo": "Rusty","img":"../Images/anteojo1.jpg"},
+    {"nombre": "Hong Kong", "precio": 14000, "tipo": "Sol", "modelo": "Vulk","img":"../Images/anteojo1.jpg"},
+    {"nombre": "Tokyo", "precio": 13700, "tipo":  "Sol", "modelo": "Vulk","img":"../Images/anteojo1.jpg"},
+    {"nombre":"Amsterdam", "precio": 25000,"tipo": "Leer","modelo": "Ossira","img":"../Images/anteojo1.jpg"},
+    {"nombre":"Barcelona","preico": 22000,"tipo": "Leer","modelo": "Vulk","img":"../Images/anteojo1.jpg"},
+    {"nombre":"París","precio": 21000,"tipo": "Leer","modelo": "Ossira","img":"../Images/anteojo1.jpg"}
+
+]
