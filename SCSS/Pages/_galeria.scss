@@ -47,3 +47,27 @@
 .MargenBot{
   margin-top: 200px;
 }
+
+.imgProductos{
+  width: 300px;
+  height: 180px;
+}
+
+.displayProductos{
+  margin: 1%;
+}
+
+.displayCarrito{
+  margin: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  border-style: groove;
+  width: 800px;
+  justify-items: center;
+  margin-left: 25%;
+}
+
+.imgCarrito{
+  width: 350px;
+  height: 200px;
+}
