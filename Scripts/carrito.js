@@ -10,7 +10,7 @@ function mostrarCarrito(){
         `
         <div>
             <p> No hay productos en el carrito </p>
-            <a class="btn" href="/">Volver al catalogo</a>
+            <a class="btn" href="../Pages/galeria.html">Volver al catalogo</a>
         </div>
         `
     } else {
@@ -18,7 +18,7 @@ function mostrarCarrito(){
             const {id, nombre, precio, imagen, cantidad} = producto
             const productoHTML = 
             `
-            <div class="displayCarrito">
+            <div class="displayCarrito asd">
                 <img class="imgCarrito" src="../${imagen}"></img>
                 <h3>${nombre}</h3>
                 <p>${precio}</p>

@@ -10,7 +10,7 @@ function mostrarCatalogo(){
         const{id, nombre, precio, imagen} = producto
         const productoHTML =
         `
-        <div class="displayProductos">
+        <div class="displayProductos asd">
             <img src="${imagen}" class="imgProductos"></img>
             <h3>${nombre}</h3>
             <p>${precio}</p>
@@ -30,9 +30,18 @@ fetchProcuctos().then(producto => {
 
 const carrito = JSON.parse(localStorage.getItem("carrito")) || []
 
+
 function sumarAlCarrito(id){
     const producto = catagolo.find(p => p.id == id)
-    carrito.push(producto)
+    if (carrito.find(producto => producto.id == id)) {
+        const producto = carrito.find(producto => producto.id == id)
+        producto.cantidad++
+    } else {
+        carrito.push({
+            ...producto,
+            cantidad: 1
+        })
+    }
     guardarCarrito()
 }
 
